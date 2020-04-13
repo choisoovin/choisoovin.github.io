@@ -1,0 +1,166 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.name {
+	font-size:60px;
+	font-family:'Reenie Beanie', cursive;
+	padding-left:70px;
+	margin-top:70px;
+}
+body {
+	background: #1D1D1D;
+	font-size:30px;
+	line-height: 32px;
+	font-family: 'Comfortaa', cursive;
+	color: #F2E205 ;
+	word-wrap:break-word !important;
+	}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+
+	color: #FFF;
+
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:center;
+	font-size:60px;
+	font-family:  'Reenie Beanie', cursive;
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+}
+
+nav {
+	margin: 50px 0;
+	margin-left:1200px;
+	background-color: #1D1D1D;
+	font-family: 'Comfortaa', cursive;
+
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #1D1D1D;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:28px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #F2E205; 
+	color:#1D1D1D;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:330px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:330px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+.img1 {
+	width:400px;
+	height:auto;
+	display:center;
+}
+/* Pure CSS Loading Clock Using a Single Div */
+.loading-clock {
+  margin: 50px auto;
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-color: #F2E205;
+  border-radius: 100%;
+  position: relative;
+}
+.loading-clock:before,
+.loading-clock:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 2px;
+  left: 19px; /* half width of clock - half width of hand */
+  background: #F2E205;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+/* Animations */
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Big hand */
+.loading-clock:before {
+  top: 5px;
+  height: 20px; /* half the width/height of the clock */
+  transform-origin: 1px 15px;
+  animation: rotate .35s infinite linear;
+}
+/* Little hand */
+.loading-clock:after {
+  top: 11px;
+  height: 14px; /* top + height for little hand must = top + height for big hand */
+  transform-origin: 1px 9px;
+  animation: rotate 4.2s infinite linear; /* time should be big-hand time * 12 */
+}

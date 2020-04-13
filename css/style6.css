@@ -1,0 +1,318 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.name {
+	font-size:40px;
+	font-family: 'Ubuntu Mono', monospace;
+	margin-top:70px;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.state {
+  font-size:19px;
+  font-family: 'Libre Baskerville', serif;
+  text-align:left;
+  margin-left:100px;
+  background-color: white;
+  width:1000px;
+color:black;
+;
+}
+.background {background:#ffff29;
+}
+.accent {
+	color:#F20544;
+}
+.description {
+	text-align:right;
+	margin-right:210px;
+	font-size:20px;
+}
+.artiststatement{
+	text-align:left;
+	padding-left:200px;
+	background-color: #F2EFDD;
+	color:black;
+	width:1200px
+	;
+	font-family: 'Ubuntu Mono', monospace;
+}
+.container1 {
+  position: relative;
+  width: 400px;
+}
+
+.image {
+  display: block;
+  width: 550px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #DF50F2;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family:'Ubuntu Mono', monospace;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container2 {
+  position: relative;
+  width: 400px;
+}
+
+.image2 {
+  display: block;
+  width: 550px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #DF50F2;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+body {
+	background: black;
+	font-size:30px;
+	line-height: 32px;
+	font-family: 'Ubuntu Mono', monospace;
+	color: white ;
+	word-wrap:break-word !important;
+	}
+
+p { font-family:'Ubuntu Mono', monospace;
+font-size:30px;
+color: white;
+
+
+}
+.glow {
+	font-size:30px;
+	line-height: 32px;
+	font-family: 'Ubuntu Mono', monospace;
+	color:white;
+	text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #F2E205, 0 0 40px #F2E205, 0 0 50px #F2E205, 0 0 60px #F2E205, 0 0 70px #F2E205;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #DF50F2, 0 0 40px #DF50F2, 0 0 50px #DF50F2, 0 0 60px #DF50F2, 0 0 70px #DF50F2, 0 0 80px #F26BC3;
+  }
+} ;
+
+}
+
+h1 {
+	font-size: 32px;
+	text-align: left;
+	color: #E8DED1;
+	width:1000px;
+
+
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align:left;
+	padding-left:200px;
+	font-size:35px;
+	color:#F2055C;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+	width:1300px;
+	}
+
+#container {
+	margin: 0 auto;
+}
+
+
+nav {
+	margin: 50px 0;
+	background-color: black;
+	font-size:40px;
+	font-family: 'Ubuntu Mono', monospace;
+
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: black;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color: #DF50F2;
+	font-size:22px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #F2E205; 
+	color:#1D1D1D;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	font-size:22px;
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:330px;
+	float:none;
+	font-size:22px;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:330px;
+	font-size:22px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+.img1 {
+	width:70%;
+	height:flex;
+}
+.img2 {
+width:480px;
+height:auto;
+}
+.img3 { width:auto;
+height:500px; }
+
+.img4 {width:500px;
+height:auto;}
+/* Pure CSS Loading Clock Using a Single Div */
+.loading-clock {
+  margin: 50px auto;
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-color: #F2E205;
+  border-radius: 100%;
+  position: relative;
+}
+.loading-clock:before,
+.loading-clock:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 2px;
+  left: 19px; /* half width of clock - half width of hand */
+  background: #F2E205;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+/* Animations */
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Big hand */
+.loading-clock:before {
+  top: 5px;
+  height: 20px; /* half the width/height of the clock */
+  transform-origin: 1px 15px;
+  animation: rotate .35s infinite linear;
+}
+/* Little hand */
+.loading-clock:after {
+  top: 11px;
+  height: 14px; /* top + height for little hand must = top + height for big hand */
+  transform-origin: 1px 9px;
+  animation: rotate 4.2s infinite linear; /* time should be big-hand time * 12 */
+}

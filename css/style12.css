@@ -1,0 +1,22 @@
+body {
+	background-image:url('https://wallpaperaccess.com/full/656724.jpg');
+}
+.flex-container {
+  display: flex;
+}
+.img1 {
+	width:170px;
+	height:auto;
+}
+.img2 {
+	width:100px;
+	height:auto;
+	margin-right:200px;
+}
+.img3 { width:200px;
+height:auto;
+margin-left:100px; }
+.img4 {height:200px;
+width:140px;}
+.img5 {width:100px
+	height:100px;}
