@@ -1,0 +1,145 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.name {
+	font-size:40px;
+	font-family: 'Ubuntu Mono', monospace;
+	margin-top:70px;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.highlight {
+	font-family: 'Liu Jian Mao Cao', cursive;
+	font-size:25px;
+	margin-left:50px;
+}
+.casecase { background:#5A1F00;
+	color:white;
+
+}
+.image { width:80%;
+	height:auto; }
+.image1 {width:40%;
+height:auto;}
+.image2 {width:19.7%;
+height:auto;}
+.image3 {width:80%;
+height:auto;}
+.image6{width:60%;
+height:auto;}
+
+
+}
+.thirdblock {
+	margin-left:500px;
+	text-align:left;
+}
+p { font-family: 'font-family: 'Arvo', serif;';
+width: 800px;
+margin-left:50px;}
+body {
+	background: white;
+	font-size:22px;
+	line-height: 32px;
+	text-align:left;
+	font-family: 'Josefin Slab', serif;
+
+	color: black ;
+	word-wrap:break-word !important;
+	}
+
+
+.ul2 {
+  display: block;
+  list-style-type: none;
+  padding: 150px;
+  padding-left: 475px;
+  width: 300px;
+  background-color: black;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.description {
+	text-align:left;
+	margin-left:200px;
+}
+.title {
+	size:30px;
+	color:#F2E205;
+	font-family: 'Special Elite', cursive;
+	text-align: left;
+	margin-left:200px;
+}
+.video1 {
+	display:flex;
+	width:1280px;
+	height:720px;
+}
+.img1 {
+	width:50%;
+	height:auto;
+	margin-left:50px;
+}
+
+.img2 {
+width:500px;
+height:auto;
+}
+.img3 { width:500px;
+height:auto; }
+.img4 {width:500px;
+height:auto;}
+/* Pure CSS Loading Clock Using a Single Div */
+.loading-clock {
+  margin: 50px auto;
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-color: #F2E205;
+  border-radius: 100%;
+  position: relative;
+}
+.loading-clock:before,
+.loading-clock:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 2px;
+  left: 19px; /* half width of clock - half width of hand */
+  background: #F2E205;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+/* Animations */
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Big hand */
+.loading-clock:before {
+  top: 5px;
+  height: 20px; /* half the width/height of the clock */
+  transform-origin: 1px 15px;
+  animation: rotate .35s infinite linear;
+}
+/* Little hand */
+.loading-clock:after {
+  top: 11px;
+  height: 14px; /* top + height for little hand must = top + height for big hand */
+  transform-origin: 1px 9px;
+  animation: rotate 4.2s infinite linear; /* time should be big-hand time * 12 */
+}
