@@ -20,7 +20,8 @@ body {
   width:1000px;
 }
 
-
+.i {width:50%;
+height:auto;}
 
 *{margin: 0; padding: 0;}
 body{background-color: black;}
